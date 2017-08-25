@@ -1,0 +1,30 @@
+.demo-space {
+  background-color: rgba(255,255,255,.85);
+  border: 10px solid #000;
+  color: #000;
+  margin-top: 10px;
+  min-height: 420px;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Additional Visual Styling */
+
+.grid-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #F6F3EA;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.grid-container li {
+  padding: 1em;
+  background: #F9423A;
+}

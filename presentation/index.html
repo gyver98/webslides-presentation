@@ -87,18 +87,36 @@
       <section class="bg-gradient-r aligncenter">
         <h1>Super Quick Way to Try out CSS Grid</h1>
       </section>
+      <section>
+        <div class="wrap size-50">
+          <h2><strong>Major layouts vs UI elements</strong></h2>
+          <p class="text-intro">Only the direct children become a Grid Item </p>
+          <p class="text-intro">Here we find the biggest difference between Grid and Flexbox. Flexbox is essentially for laying out items in a single dimension – in a <strong>row OR a column</strong>. Grid is for layout of items in two dimensions – <strong>rows AND columns.</strong> </p>
+          <p class="text-intro">CSS Grid does not get applied to the entire page with everything on it.</p>
+          <p class="text-intro">You define a grid on a specific element. All of the direct children of that element will be placed on that Grid.</p>
+          
+          <p class="text-symbols">* * *</p>
+          <p class="aligncenter">Should I use Grid or Flexbox?<br>
+            <a href="https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/">Rachel Andrew</a>.
+          </p>
+          <p class="aligncenter">Here's a Super Quick Way to Try out CSS Grid<br>
+            <a href="http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid">Jen Simmons</a>.
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
       <!-- Second slide -->
       <section>
         <div class="wrap">
           <h3>Three columns layout : 100px each </h3>
-          <div class="text-intro">
-            <pre>
-.grid-container {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 20px;
-}
-</pre>
+          <div>
+            <pre class="text-intro">
+            .grid-container {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-gap: 20px;
+            }
+            </pre>
           </div>
           <div class="demo-space">
             <ul class="grid-container">

@@ -10,7 +10,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 /* Additional Visual Styling */
@@ -26,5 +26,7 @@
 }
 .grid-container li {
   padding: 1em;
-  background: #F9423A;
+  background-color: #FAD961;
+  background-image: linear-gradient(270deg, #FAD961 0%, #F76B1C 99%);
+  margin-left: 0;
 }

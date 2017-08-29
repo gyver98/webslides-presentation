@@ -108,15 +108,32 @@
       <!-- Second slide -->
       <section>
         <div class="wrap">
-          <h3>Three columns layout : 100px each </h3>
-          <div>
-            <pre class="text-intro">
-            .grid-container {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-gap: 20px;
-            }
-            </pre>
+          <h1>CSS Grid - example 1</h1>
+          <h3>Three columns layout : 1fr each - It will create three columns that are all the same width as each other — all one fraction of the available space.</h3>
+          <div class="grid vertical-align">
+            <div class="column">
+<pre class="text-intro">
+  <xmp>
+    <ul class="grid-container">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+    </ul>
+  </xmp>
+</pre>
+            </div>
+            <div class="column">
+<pre class="text-intro">
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+</pre>
+            </div>
           </div>
           <div class="demo-space">
             <ul class="grid-container">
@@ -126,13 +143,15 @@
               <li>Four</li>
               <li>Five</li>
               <li>Six</li>
-              <li>Seven</li>
             </ul>
           </div>
         </div>
 
       </section>
       <!-- Third slide -->
+        <div class="wrap">
+
+        </div>
       <section>
         ...
       </section>

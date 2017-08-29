@@ -34,7 +34,7 @@
 
   <!-- Optional - CSS grid -->
   <link rel="stylesheet" type="text/css" media="all" href="../static/css/grid.css">
-  
+
 
   <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
@@ -91,10 +91,11 @@
         <div class="wrap size-50">
           <h2><strong>Major layouts vs UI elements</strong></h2>
           <p class="text-intro">Only the direct children become a Grid Item </p>
-          <p class="text-intro">Here we find the biggest difference between Grid and Flexbox. Flexbox is essentially for laying out items in a single dimension – in a <strong>row OR a column</strong>. Grid is for layout of items in two dimensions – <strong>rows AND columns.</strong> </p>
+          <p class="text-intro">Here we find the biggest difference between Grid and Flexbox. Flexbox is essentially for laying out items in a
+            single dimension – in a <strong>row OR a column</strong>. Grid is for layout of items in two dimensions – <strong>rows AND columns.</strong>            </p>
           <p class="text-intro">CSS Grid does not get applied to the entire page with everything on it.</p>
           <p class="text-intro">You define a grid on a specific element. All of the direct children of that element will be placed on that Grid.</p>
-          
+
           <p class="text-symbols">* * *</p>
           <p class="aligncenter">Should I use Grid or Flexbox?<br>
             <a href="https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/">Rachel Andrew</a>.
@@ -109,10 +110,11 @@
       <section>
         <div class="wrap">
           <h1>CSS Grid - example 1</h1>
-          <h3>Three columns layout : 1fr each - It will create three columns that are all the same width as each other — all one fraction of the available space.</h3>
+          <h3>Three columns layout : 1fr each - It will create three columns that are all the same width as each other — all
+            one fraction of the available space.</h3>
           <div class="grid vertical-align">
             <div class="column">
-<pre class="text-intro">
+              <pre class="text-intro">
   <xmp>
     <ul class="grid-container">
         <li>One</li>
@@ -126,7 +128,7 @@
 </pre>
             </div>
             <div class="column">
-<pre class="text-intro">
+              <pre class="text-intro">
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -149,7 +151,7 @@
 
       </section>
       <section>
-      <!-- Third slide -->
+        <!-- slide 3 -->
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
@@ -162,12 +164,36 @@
               <h2>
                 Grid Lines
               </h2>
-              <p class="text-intro">Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of a column or row. They can be referred to by numerical index, which starts at 1.</p>
+              <p class="text-intro">Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of
+                a column or row. They can be referred to by numerical index, which starts at 1.</p>
             </div>
             <!-- end column-->
           </div>
         </div>
-      </section>      
+      </section>
+      <section>
+        <!-- slide 4 -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h2>
+                Grid Tracks and Cells
+              </h2>
+              <p class="text-intro">Grid track is a generic term for a grid column or grid row—in other words, it is the space between two adjacent
+                grid lines. </p>
+              <p class="text-intro">A grid cell is the intersection of a grid row and a grid column. It is the smallest unit of the grid that can
+                be referenced when positioning grid items. </p>
+            </div>
+            <!-- end column-->
+            <div class="column">
+              <figure>
+                <img src="../static/images/grid-tracks.png" alt="grid track">
+              </figure>
+            </div>
+            <!-- end column-->
+          </div>
+        </div>
+      </section>
       <section>
         ...
       </section>

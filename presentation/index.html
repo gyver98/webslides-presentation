@@ -167,18 +167,18 @@
               </h2>
               <p class="text-intro">Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of
                 a column or row. They can be referred to by numerical index, which starts at 1.</p>
-  <pre class="text-intro">
+              <pre class="text-intro">
     /* CSS */
     .grid-container {
       display: grid;
       grid-template-columns: 400px 300px 250px;
       grid-template-rows: 250px 200px;
     }
-  </pre>  
+  </pre>
             </div>
             <!-- end column-->
           </div>
-          </div>
+        </div>
         </div>
       </section>
       <section>
@@ -197,16 +197,16 @@
                 Grid placement properties
               </h2>
               <p class="text-intro">In order to position the items inside the grid container, you need to use the grid placement properties</p>
-  <pre class="text-intro">
+              <pre class="text-intro">
       grid-column-start: Set the first vertical line.
       grid-column-end: Set the last vertical line.
       grid-row-start: Set the first horizontal line.
       grid-row-end: Set the last horizontal line.
-  </pre>  
+  </pre>
             </div>
             <!-- end column-->
           </div>
-          </div>
+        </div>
         </div>
       </section>
       <section>
@@ -233,26 +233,38 @@
         </div>
       </section>
       <section>
-          <!-- slide 5 -->
+        <!-- slide 5 -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h2>
+                Cell spanning
+              </h2>
+              <p class="text-intro">The previous item spans two columns (the second and third columns) that reference the line. You can do the
+                same with the span keyword and the number of cells you want to span. </p>
+              <p class="text-intro">So, you could place the item in the very same position like this </p>
+            </div>
+            <!-- end column-->
+            <div class="column">
+              <figure>
+                <img src="../static/images/place-item-using-span.png" alt="grid track">
+                <p>Place item using span example</p>
+              </figure>
+            </div>
+            <!-- end column-->
+          </div>
+        </div>
+      </section>
+      <!-- slide 6 -->
+      <section class="slide-top slide current" id="section-20" style="">
+          <span class="background" style="background-image:url('../static/images/grid-area.png')"></span>
           <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <h2>
-                    Cell spanning
-                </h2>
-                <p class="text-intro">The previous item spans two columns (the second and third columns) that reference the line. You can do the same with the span keyword and the number of cells you want to span. </p>
-                <p class="text-intro">So, you could place the item in the very same position like this </p>
-              </div>
-              <!-- end column-->
-              <div class="column">
-                <figure>
-                  <img src="../static/images/place-item-using-span.png" alt="grid track">
-                  <p>Place item using span example</p>
-                </figure>
-              </div>
-              <!-- end column-->
+            <div class="content-right">
+              <h2>Grid Areas</h2>
+              <h3>A grid area is the logical space used to lay out one or more grid items. A grid area consists of one or more adjecent grid cells. </h3>
             </div>
           </div>
+          <!-- .end .wrap -->
         </section>
       <section>
         ...

@@ -83,7 +83,7 @@
 
   <main role="main">
     <article id="webslides">
-      <!-- First slide -->
+      <!-- slide cover -->
       <section class="bg-gradient-r aligncenter">
         <h1>Super Quick Way to Try out CSS Grid</h1>
       </section>
@@ -106,7 +106,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
-      <!-- Second slide -->
+      <!-- slide 1-->
       <section>
         <div class="wrap">
           <h1>CSS Grid - example 1</h1>
@@ -151,7 +151,7 @@
 
       </section>
       <section>
-        <!-- slide 3 -->
+        <!-- slide 2 -->
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
@@ -167,11 +167,39 @@
               <p class="text-intro">Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of
                 a column or row. They can be referred to by numerical index, which starts at 1.</p>
   <pre class="text-intro">
+    /* CSS */
     .grid-container {
       display: grid;
       grid-template-columns: 400px 300px 250px;
       grid-template-rows: 250px 200px;
     }
+  </pre>  
+            </div>
+            <!-- end column-->
+          </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- slide 3 -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <figure>
+                <img src="../static/images/grid-placement-with-linenumber2.png" alt="grid line">
+              </figure>
+            </div>
+            <!-- end column-->
+            <div class="column">
+              <h2>
+                Grid placement properties
+              </h2>
+              <p class="text-intro">In order to position the items inside the grid container, you need to use the grid placement properties</p>
+  <pre class="text-intro">
+      grid-column-start: Set the first vertical line.
+      grid-column-end: Set the last vertical line.
+      grid-row-start: Set the first horizontal line.
+      grid-row-end: Set the last horizontal line.
   </pre>  
             </div>
             <!-- end column-->

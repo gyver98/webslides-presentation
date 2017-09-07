@@ -102,7 +102,9 @@
         </div>
         <!-- .end .wrap -->
       </section>
-      
+      <section class="bg-light aligncenter">
+        <h1>Start by thinking about what to make a Grid container, and how to structure your markup so you have the Grid items that you want</h1>
+      </section>
       <!-- slide 1-->
       <section>
         <div class="wrap">
@@ -110,8 +112,9 @@
           <p class="text-intro">Three columns layout : The first column gets one of the four parts available on the small screen. On a screen larger
             than 786px, again use a 3-column grid to make the first and second columns 25% wide (1 out of 4) and the third
             column 50% (2 out of 4) — the new fr unit represents a fraction of the remaining free space in the grid container.
+            More example here
           </p>
-          <div class="grid vertical-align">
+          <div class="grid sm">
             <div class="column">
 <pre class="text-intro">
   <xmp>
@@ -127,7 +130,7 @@
 </pre>
             </div>
             <div class="column">
-              <pre>
+              <pre class="text-intro">
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -180,7 +183,7 @@
               </h1>
               <p class="text-intro">Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of
                 a column or row. They can be referred to by numerical index, which starts at 1.</p>
-<pre>
+<pre class="text-intro">
 .grid-container {
   display: grid;
   grid-template-columns: 400px 300px 250px;
@@ -272,7 +275,7 @@
         <div class="wrap">
           <h2><strong>Grid Areas</strong></h2>
           <p class="text-intro">A grid area is the logical space used to lay out one or more grid items. A grid area consists of one or more adjecent
-            grid cells.
+            grid cells. (think of CSS Grid as a coordinate system, a virtual reference used to specify locations)
           </p>
           <img class="aligncenter size-100" src="../static/images/grid-area.png" alt="grid-area">
         </div>
@@ -288,12 +291,99 @@
       </section>
       <section class="slide-top slide current" style="">
           <div class="wrap">
-            <h2><strong>Responsive Grid Area example</strong></h2>
+            <h2><strong>Responsive Grid Area example</strong><br>
+              <a href="https://codepen.io/mattchoi/pen/qXwEqB">codepen demo</a>
+            </h2>
+            
             <img class="aligncenter size-90" src="../static/images/layout-mockup2.png" alt="grid-area-example">
           </div>
           <!-- .end .wrap -->
         </section>
-      <!-- slide 9-->
+        <section class="slide-top slide current" style="">
+          <div class="wrap">
+            <h2><strong>Responsive Holy Grail Layout example</strong><br>
+            </h2>
+            <a href="https://codepen.io/mattchoi/pen/LjvEKb">codepen demo</a>
+            <p>The Holy Grail Layout is a web page layout that consists of four sections - a header, footer, and a main content area with two sidebars, one on each side.</p>
+            <div class="content-center">
+              <h3>The layout also adheres to the following rules</h3>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right" viewBox="0 0 512 512">
+                        
+                      
+      <path d="m494 255c0 3-1 5-3 7l-110 101c-3 3-6 3-10 2-3-2-5-5-5-8l0-64-357 0c-3 0-5-1-6-3-2-2-3-4-3-7l0-54c0-3 1-5 3-7 1-2 3-3 6-3l357 0 0-64c0-4 2-6 5-8 4-1 7-1 10 2l110 100c2 1 3 4 3 6z"></path>
+    </svg>
+    Has a fluid center column width fixed-width sidebars
+                    </h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right" viewBox="0 0 512 512">
+                        
+                      
+      <path d="m494 255c0 3-1 5-3 7l-110 101c-3 3-6 3-10 2-3-2-5-5-5-8l0-64-357 0c-3 0-5-1-6-3-2-2-3-4-3-7l0-54c0-3 1-5 3-7 1-2 3-3 6-3l357 0 0-64c0-4 2-6 5-8 4-1 7-1 10 2l110 100c2 1 3 4 3 6z"></path>
+    </svg>
+    The center column should appear first in the markup, before the two sidebars (but after the header)
+                    </h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right" viewBox="0 0 512 512">
+                        
+                      
+      <path d="m494 255c0 3-1 5-3 7l-110 101c-3 3-6 3-10 2-3-2-5-5-5-8l0-64-357 0c-3 0-5-1-6-3-2-2-3-4-3-7l0-54c0-3 1-5 3-7 1-2 3-3 6-3l357 0 0-64c0-4 2-6 5-8 4-1 7-1 10 2l110 100c2 1 3 4 3 6z"></path>
+    </svg>
+    All three columns should be the same height, regardless of the content within them  
+                    </h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right" viewBox="0 0 512 512">
+                        
+                      
+      <path d="m494 255c0 3-1 5-3 7l-110 101c-3 3-6 3-10 2-3-2-5-5-5-8l0-64-357 0c-3 0-5-1-6-3-2-2-3-4-3-7l0-54c0-3 1-5 3-7 1-2 3-3 6-3l357 0 0-64c0-4 2-6 5-8 4-1 7-1 10 2l110 100c2 1 3 4 3 6z"></path>
+    </svg>
+    The footer should always be at the bottom of the browser viewport, even when the content doesn't fill up the height of the viewport 
+                    </h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-long-arrow-right" viewBox="0 0 512 512">
+                        
+                      
+      <path d="m494 255c0 3-1 5-3 7l-110 101c-3 3-6 3-10 2-3-2-5-5-5-8l0-64-357 0c-3 0-5-1-6-3-2-2-3-4-3-7l0-54c0-3 1-5 3-7 1-2 3-3 6-3l357 0 0-64c0-4 2-6 5-8 4-1 7-1 10 2l110 100c2 1 3 4 3 6z"></path>
+    </svg>
+    The layout should be responsive, all the sections should collapse into one column on smaller viewports
+                    </h2>
+                  </div>
+                </li>
+              </ul>
+              <h3>It is famously difficult to create simply in CSS without any hacks.</h3>
+            </div>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top slide current" style="">
+          <div class="wrap">
+            <a href="https://codepen.io/mattchoi/pen/LjvEKb?editors=0110">codepen</a>
+            <p class="text-intro">New functions such as the MinMax that we touched upon in this example, in combination with new sizing units such as the fr offer all types of responsive layout possibilities. </p>
+            <p class="text-intro">The minmax() function accepts two parameters, a minimum value and a maximum value.</p>
+            <img class="aligncenter size-90" src="../static/images/holy-grail.png" alt="">
+          </div>
+          <!-- .end .wrap -->
+        </section>
       <section>
         <div class="wrap size-50">
           <h2><strong>Major layouts vs UI elements</strong></h2>

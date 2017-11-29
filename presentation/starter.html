@@ -104,54 +104,85 @@
       </section>
       <!-- slide 2-->
       <section>
-        <div class="wrap">
-          <h2>CSS Grid - example 1</h2>
-          <p class="text-intro">Three columns layout : The first column gets one of the four parts available on the small screen. On a screen larger
-            than 786px, again use a 3-column grid to make the first and second columns 25% wide (1 out of 4) and the third
-            column 50% (2 out of 4) — the new fr unit represents a fraction of the remaining free space in the grid container.
-            More example <a href="http://css-grid-showcase-v1.surge.sh/#demos">here</a>
-          </p>
-          <div class="grid sm">
-            <div class="column">
-              <pre class="text-intro">
-<xmp>
-<ul class="grid-container">
-  <li>One</li>
-  <li>Two</li>
-  <li>Three</li>
-  <li>Four</li>
-  <li>Five</li>
-  <li>Six</li>
-</ul>
-</xmp>
-</pre>
-            </div>
-            <div class="column">
-              <pre class="text-intro">
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 10px;
-}
-@media screen and (min-width: 786px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 2fr;
-  }
-}
-</pre>
-            </div>
-          </div>
-          <div class="demo-space">
-            <ul class="grid-container">
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-              <li>Four</li>
-              <li>Five</li>
-              <li>Six</li>
-            </ul>
-          </div>
+        <div class="wrap size-50">
+          <h3>Tables</h3>
+          <p>All content is for demo purposes only.</p>
+          <hr>
+          <ol class="text-cols">
+            <li><a target="_blank" href="#slide=5">Welcomes & Abouts</a></li>
+            <li><a target="_blank" href="#slide=9">Covers & Case Studies</a></li>
+            <li><a target="_blank" href="#slide=16">Metrics & Data</a></li>
+            <li><a target="_blank" href="#slide=22">Services & Clients</a></li>
+            <li><a target="_blank" href="#slide=28">Galleries</a></li>
+            <li><a target="_blank" href="#slide=33">Cards</a></li>
+            <li><a target="_blank" href="#slide=36">Features & Benefits</a></li>
+            <li><a target="_blank" href="#slide=41">CV/Resumé</a></li>
+            <li><a target="_blank" href="#slide=45">Quotes</a></li>
+            <li><a target="_blank" href="#slide=49">SVG Icons</a></li>
+            <li><a target="_blank" href="#slide=50">Logos</a></li>
+            <li><a target="_blank" href="#slide=51">CSS Alignments</a></li>
+            <li><a target="_blank" href="#slide=62">CSS Animations</a></li>
+            <li><a target="_blank" href="#slide=67">Background images</a></li>
+            <li><a target="_blank" href="#slide=70">Embedding videos, maps, charts...</a></li>
+            <li><a target="_blank" href="#slide=76">Typography</a></li>
+          </ol>
         </div>
+        <!-- .end .wrap -->
+      </section>
+      <!-- slide 3-->
+      <section>
+        <div class="wrap size-70">
+          <h2><strong>What is webpack?</strong></h2>
+          <p class="text-intro">Webpack is just another evolving step in the tooling ecosystem. First there was Grunt. Then Gulp thanks to easier configuration. Gulp is awesome. It is undoubtedly a good choice for an easier project.</p>
+          <p class="text-intro">
+            But once you have a project that needs bigger and more resources, the webpack is definitely the way to go. For example we need to compile Javascript, SCSS, require/import files, script minification, unit test, hot reload without effecting current state, bundle production builds, etc.</p>
+          <p class="text-intro">webpack is not the only module bundler out there. If you are choosing between using webpack or any of the bundlers below, here is a feature-by-feature comparison on how webpack fares against the current competition. 
+            <a href="https://webpack.js.org/comparison/">Comparison</a>.
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <!-- slide 4-->
+      <section>
+        <div class="wrap">
+          <h1>Why <span>webpack</span></h1>
+          <ul class="flexblock blink border">
+            <li>
+              <a href="#">
+                <h2>
+                  <svg class="fa-bar-chart">
+                    <use xlink:href="#fa-bar-chart"></use>
+                  </svg>
+                  Relative newness
+                </h2>
+                What makes webpack so different from other module bundlers is the fact that it has watched other module bundlers and seen areas that needed improvements. 
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <h2>
+                  <svg class="fa-balance-scale">
+                    <use xlink:href="#fa-balance-scale"></use>
+                  </svg>
+                  Getting started is simple
+                </h2>
+                If you’re just looking to bundle a bunch of JavaScript files together without any other fancy stuff, you won’t even need a configuration file.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h2>
+                  <svg class="fa-cog">
+                    <use xlink:href="#fa-cog"></use>
+                  </svg>
+                  Plugin system
+                </h2>
+                Its plugin system enables it to do so much more, making it quite powerful. So, it might be the only build tool you need.
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- .end .wrap -->
       </section>
       <!-- slide 2-->
       <section>
